@@ -1,4 +1,3 @@
-<style>
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
 
 *, *:before, *:after {
@@ -8,26 +7,23 @@
 }
 
 body {
-   background-image: url("https://wallpapercave.com/wp/wp3524960.png");
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;   
-  
+  font-weight: 400;
+  background-image: url("https://64.media.tumblr.com/4e72e55e0401fe387861a84fd766dd87/c71141dbcdc6f40b-08/s1280x1920/4b307f9c58d750c67550e4fd2b43405103807c00.jpg");   
+  background-attachment: fixed;
   color: #999;
   line-height: 1.5;
-  background-repeat: no-repeat, repeat;
+   background-repeat: no-repeat, repeat;
   background-size: cover;
 }
-p {
-  color: white;
-  font-size: 30px;
-}
+
 .container {
   max-width: 980px;
   margin: 0 auto;
 }
 
 a {
-  color: black;
+  color: #33bfd0;
   text-decoration: none;
   -webkit-transition: color 0.3s ease-out;
   -o-transition: color 0.3s ease-out;
@@ -35,7 +31,7 @@ a {
 }
 
 a:hover {
-  color: black;
+  color: #70d2de;
 }
 
 img {
@@ -51,11 +47,6 @@ img:hover {
   opacity: 0.75;
 }
 
-a, img {
-  border: none;
-  outline: none;
-}
-
 .main {
   padding: 5em 0;
   width: 80%;
@@ -67,7 +58,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
   font-weight: 500;
 }
@@ -77,10 +68,9 @@ h3 {
   margin: 2rem 0 0 0;
   line-height: 0.5;
   font-weight: 500;
-}
-
-p {
-  background-color: lightgray;
+}p {
+  font-color: black;
+  font-size: 1.6em;
 }
 
 header {
@@ -97,12 +87,6 @@ header nav {
 header nav li {
   margin: 0 15px;
   display: inline-block;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .gallery ul li {
@@ -231,16 +215,36 @@ footer {
     float: none;
   }
 }
+
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 7px 7px #ff9900;
+  }
+  
+  to {
+    text-shadow: 2px 2px #ff9900;
+  }
+} 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: lightgray;
+  background-color:  #ff9900;
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -257,98 +261,38 @@ footer {
 .topnav a.active {
   background-color: black;
   color: white;
-} 
-</style>
-  <div class="topnav">
-  <a href="https://codepen.io/allidejesus17/full/KKgrxOM">Home</a>
-  <a href="https://codepen.io/allidejesus17/full/dyyXmMJ">About</a>
-  <a class="active"
-     href="https://codepen.io/allidejesus17/full/GRjwYbq">Info</a>
-  <a href="https://codepen.io/allidejesus17/full/qBBOzpv">Contact</a>
-
- <a 
-    
-href="https://codepen.io/allidejesus17/full/yLLYdOX">Slideshow</a>
-</div>
-
-  
-  <html>
-    <body>    
-  <div class="container">
-    
-  <n class="main">
-    <h1 style="font-size: 60px; color: black;" <n>
-
-  <section class="gallery">
-    <ul>
-      <li class="item">
-        <div class="info">
-          <a>
-            <img src="https://i.pinimg.com/originals/4d/98/1f/4d981faaa42683119f113ea27b6c58a5.jpg"style="height: 400px; width: 400px;">
-          </a></p>
-          <p style="color:black;">Ella Mai Howell who was born the 3rd of November in 1994. She is an English singer-songwriter. Her musical career began at London's British and Irish Modern Music Institute in 2014, during which time she auditioned as part of a trio on the 11th season of The X Factor. In 2015, she uploaded a four-track solo EP of originals to SoundCloud titled Troubled, and was discovered on social media by American record producer Mustard and signed with his record label, 10 Summers Records.</p>
-        </div>      
-      </li>
-      
-      <li class="item">
-        <div class="info">
-          <a>
-            <img src="https://i.pinimg.com/originals/86/0a/8c/860a8c4e1347af7ea6ce70b066fdd90e.jpg" style="height: 400px; width: 400px;"> 
-          </a>
-          <p style="color:black;">Ella Mai's singing career began studying at the British and Irish Modern Music Institute London (BIMM London) in 2014. During that time she competed on series 11 of The X Factor as part of a trio, 'Arize', but didn't advance beyond the initial audition for the judges. The group broke up shortly thereafter..</p>
-        </div>
-      </li>
-      
-      <li class="item">
-        <div class="info">
-          <a>
-            <img src="http://s.ecrater.com/stores/408554/5c7e46b27c70f_408554b.jpg"style="height: 400px; width: 400px;">
-          </a>
-          <h3 style="color:black;"> </h3>
-          <p style="color:black;"> After Mai served as the opening act on Kehlani's tour, her music reached a bigger audience and the song grew on radio airplay in the spring of 2018.[11]
-
-
-Ella Mai in 2017.
-On 26 April 2018, she released a music video for "Boo'd Up" after it started to gain popularity.The song became her first top ten song in the US in the following month, deeming it her "breakthrough hit. Rolling Stone wrote that the single is "one of the biggest singles by a breakout female R&B singer in the past 10 years.</p>
-        </div>
-      </li>
-      
-      <li class="item">
-        <div class="info">
-          <a>
-            <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/04/02/15542007874085.jpg"style="height: 400px; width: 400px;">
-          </a>
-          <h3 style="color:white;"></h3>
-          <p style="color:black;"> In multiple interviews, Ella Mai names Lauryn Hill, Chris Brown, Brandy, Destiny's Child, Alicia Keys, and Mariah Carey as her biggest influences.[30] Vibe said her "perception of the powerful emotion is kindred to R&B heartthrobs of the '90s, who flooded the radio airwaves with soulful ballads, baby-making tunes, and heart-wrenching break-up anthems."[31] Rolling Stone described her sound as "a British émigré full of self-confidence and an affinity for classic Nineties R&B.</p>
-        </div>
-    </li>
-      
-      <li class="item">
-        <div class="info">   
-    <p>Click the button to Find out more about each Singer</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
- var str = "All R&B Singers!";
- var result = str.link("https://www.billboard.com/photos/6737387/best-r-and-b-singers-of-all-time");
- document.getElementById("demo").innerHTML = result;
 }
-</script>            
-        </div>
-      </li>    
-    </ul>
-  </section>
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
-  <footer>
-    <p>
-      &copy; Copyright 2021 <a href="http://katherinekato.com" title="Katherine Kato" target="_blank">Alli Dejesus</a>
-    </p>
-  </footer>
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-</div>  
-  </body>
-</html>
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: yellow;
+  color: black;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color:  #ff9900;
+  padding: 20px;
+}
