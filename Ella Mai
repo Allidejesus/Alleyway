@@ -1,0 +1,354 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+   background-image: url("https://wallpapercave.com/wp/wp3524960.png");
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;   
+  
+  color: #999;
+  line-height: 1.5;
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+}
+p {
+  color: white;
+  font-size: 30px;
+}
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+a:hover {
+  color: black;
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+  width: 100%;
+  -webkit-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+
+img:hover {
+  opacity: 0.75;
+}
+
+a, img {
+  border: none;
+  outline: none;
+}
+
+.main {
+  padding: 5em 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.3em;
+  margin: 2rem 0 0 0;
+  line-height: 0.5;
+  font-weight: 500;
+}
+
+p {
+  background-color: lightgray;
+}
+
+header {
+  text-align: center;
+  color: #33bfd0;
+  text-transform: uppercase;
+}
+
+header nav {
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header nav li {
+  margin: 0 15px;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery ul li {
+  padding-bottom: 1em;
+}
+
+.item {
+  max-width: 50%;
+  float: left;
+  margin-bottom: 1em;
+  display: block;
+}
+
+.item:nth-of-type(2n+1) {
+  clear: left;
+}
+
+footer {
+  text-align: center;
+  padding: 2em 0;
+}
+
+/* CSS Grid */
+.container {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "gallery gallery gallery"
+    "footer footer footer";
+}
+
+.main {
+  grid-area: main;
+}
+
+header {
+  grid-area: header;
+  display: grid;
+  justify-items: center;
+}
+
+.gallery {
+  grid-area: gallery;
+}
+
+.gallery ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-gap: 1em;
+}
+
+footer {
+  grid-area: footer;
+  display: grid;
+  justify-items: center;
+}
+
+/* Flexbox */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+header nav {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+header nav ul {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.gallery ul li {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 calc(50% - 1em);
+  flex: 0 1 calc(50% - 1em);
+  -ms-flex-preferred-size: calc(50% - 1em);
+  flex-basis: calc(50% - 1em);
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/* Media Queries */
+@media (max-width: 824px) {
+  header nav li {
+    margin: 0 10px;
+  }
+
+  .gallery ul {
+    grid-template-columns: 100%;
+  }
+
+  .gallery ul li {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+
+  .item {
+    max-width: 100%;
+    float: none;
+  }
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: lightgray;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: black;
+  color: white;
+} 
+</style>
+  <div class="topnav">
+  <a href="https://codepen.io/allidejesus17/full/KKgrxOM">Home</a>
+  <a href="https://codepen.io/allidejesus17/full/dyyXmMJ">About</a>
+  <a class="active"
+     href="https://codepen.io/allidejesus17/full/GRjwYbq">Info</a>
+  <a href="https://codepen.io/allidejesus17/full/qBBOzpv">Contact</a>
+
+ <a 
+    
+href="https://codepen.io/allidejesus17/full/yLLYdOX">Slideshow</a>
+</div>
+
+  
+  <html>
+    <body>    
+  <div class="container">
+    
+  <n class="main">
+    <h1 style="font-size: 60px; color: black;" <n>
+
+  <section class="gallery">
+    <ul>
+      <li class="item">
+        <div class="info">
+          <a>
+            <img src="https://i.pinimg.com/originals/4d/98/1f/4d981faaa42683119f113ea27b6c58a5.jpg"style="height: 400px; width: 400px;">
+          </a></p>
+          <p style="color:black;">Ella Mai Howell who was born the 3rd of November in 1994. She is an English singer-songwriter. Her musical career began at London's British and Irish Modern Music Institute in 2014, during which time she auditioned as part of a trio on the 11th season of The X Factor. In 2015, she uploaded a four-track solo EP of originals to SoundCloud titled Troubled, and was discovered on social media by American record producer Mustard and signed with his record label, 10 Summers Records.</p>
+        </div>      
+      </li>
+      
+      <li class="item">
+        <div class="info">
+          <a>
+            <img src="https://i.pinimg.com/originals/86/0a/8c/860a8c4e1347af7ea6ce70b066fdd90e.jpg" style="height: 400px; width: 400px;"> 
+          </a>
+          <p style="color:black;">Ella Mai's singing career began studying at the British and Irish Modern Music Institute London (BIMM London) in 2014. During that time she competed on series 11 of The X Factor as part of a trio, 'Arize', but didn't advance beyond the initial audition for the judges. The group broke up shortly thereafter..</p>
+        </div>
+      </li>
+      
+      <li class="item">
+        <div class="info">
+          <a>
+            <img src="http://s.ecrater.com/stores/408554/5c7e46b27c70f_408554b.jpg"style="height: 400px; width: 400px;">
+          </a>
+          <h3 style="color:black;"> </h3>
+          <p style="color:black;"> After Mai served as the opening act on Kehlani's tour, her music reached a bigger audience and the song grew on radio airplay in the spring of 2018.[11]
+
+
+Ella Mai in 2017.
+On 26 April 2018, she released a music video for "Boo'd Up" after it started to gain popularity.The song became her first top ten song in the US in the following month, deeming it her "breakthrough hit. Rolling Stone wrote that the single is "one of the biggest singles by a breakout female R&B singer in the past 10 years.</p>
+        </div>
+      </li>
+      
+      <li class="item">
+        <div class="info">
+          <a>
+            <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/04/02/15542007874085.jpg"style="height: 400px; width: 400px;">
+          </a>
+          <h3 style="color:white;"></h3>
+          <p style="color:black;"> In multiple interviews, Ella Mai names Lauryn Hill, Chris Brown, Brandy, Destiny's Child, Alicia Keys, and Mariah Carey as her biggest influences.[30] Vibe said her "perception of the powerful emotion is kindred to R&B heartthrobs of the '90s, who flooded the radio airwaves with soulful ballads, baby-making tunes, and heart-wrenching break-up anthems."[31] Rolling Stone described her sound as "a British émigré full of self-confidence and an affinity for classic Nineties R&B.</p>
+        </div>
+    </li>
+      
+      <li class="item">
+        <div class="info">   
+    <p>Click the button to Find out more about each Singer</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+ var str = "All R&B Singers!";
+ var result = str.link("https://www.billboard.com/photos/6737387/best-r-and-b-singers-of-all-time");
+ document.getElementById("demo").innerHTML = result;
+}
+</script>            
+        </div>
+      </li>    
+    </ul>
+  </section>
+
+  <footer>
+    <p>
+      &copy; Copyright 2021 <a href="http://katherinekato.com" title="Katherine Kato" target="_blank">Alli Dejesus</a>
+    </p>
+  </footer>
+
+</div>  
+  </body>
+</html>
